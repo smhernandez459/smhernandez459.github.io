@@ -1,22 +1,32 @@
 body {
 	font-family: "Alegreya Sans";
 	background: #f4f3f1;
+
 }
 
 #nav-bar {
 	background: #242424;
-	position:fixed;
 	width: 100%;
-	left: 0px;
-	top: 0px;
 	color: white;
 	height:70px;
 	z-index: 5;
 }
 
+.nav {
+	position:absolute;
+	top:425px;
+	left:0px;
+}
+
+.sticky-nav {
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+
 #nav-toolbar {
 	position: relative;
-	top: -38px;
+	top: -36px;
 	right: 10px;
 }
 
@@ -39,22 +49,56 @@ body {
 }
 
 #logo {
-	height:65px;
+	position: relative;
+	height:60px;
 	width:60px;
-	position: relative;
 	top:2px;
-	left:2px;
+	left:10px;
 }
 
-#slideshow-container {
-	width:105%;
+#banner-container {
+	width:100%;
 	height: 425px;
-	position: relative;
+	position: absolute;
+	top:0px;
+	left:0px;
 	overflow:hidden;
-	margin-left:-10px;
+	opacity:0.9;
+	background-image: url(../img/main-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: 30% 0%;
 }
 
-.slideshow-img {
+#banner-text {
+	font-weight: 700px;
+	font-style:bold;
+	font-size: 50px;
+	color:white;
+	position: relative;
+	width: 450px;
+	margin-top: 280px;
+	line-height: 76px;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+	padding-left:10px;
+	margin-left:10px;
+}
+
+#banner-sub-text {
+	font-weight: 600px;
+	font-style:bold;
+	font-size: 30px;
+	color:white;
+	position: relative;
+	width: 450px;
+	line-height: 32px;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+	padding-left:10px;
+	margin-left:10px;
+}
+
+/*.slideshow-img {
 	width:100%;
 }
 
@@ -83,12 +127,13 @@ body {
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
-}
+}*/
 
 #page-content {
 	max-width: 1024px;
 	margin-left:auto;
 	margin-right:auto;
+	margin-top:505px;
 }
 
 .sub-title {
@@ -147,11 +192,12 @@ body {
 .adopt-img {
 	padding:15px;
 	width:70%;
-	opacity: 0.8;
+	opacity: 0.85;
 }
 
 .adopt-img:hover {
 	opacity:1;
+	cursor: pointer;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
@@ -194,8 +240,13 @@ body {
 
 
 a {
-	color:#6699cc;
+	color:rgb(216, 55, 98);
+	opacity:0.7;
 	text-decoration: none;
+}
+
+a:hover {
+	opacity:1;
 }
 
 footer {
