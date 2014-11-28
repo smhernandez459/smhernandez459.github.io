@@ -1,14 +1,8 @@
 #banner-container {
-	background-image: url(../img/luna.jpg);
+	background-image: url(../img/adopt.jpg);
 	background-repeat: no-repeat;
 	background-position: 30% 0%;
 }
-
-/*<div id="slideshow-container">
-				<div class="slideshow-item"><img class="slideshow-img" src="assets/img/banner.jpg"/></div>
-				<div class="slideshow-arrow" id="left-arrow"><img class="img-scaled" src="assets/img/left.png"/></div>
-				<div class="slideshow-arrow" id="right-arrow"><img class="img-scaled" src="assets/img/right.png"/></div>
-			</div> */
 
 #slideshow-container {
 	width:100%;
@@ -49,4 +43,14 @@
 	-moz-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+.adopt-item {
+	display:inline-block;
+	width:18%;
+	text-align: center;
+}
+
+.adopt-center-item {
+	width:25%;
 }

@@ -98,37 +98,6 @@ body {
 	margin-left:10px;
 }
 
-/*.slideshow-img {
-	width:100%;
-}
-
-.slideshow-arrow {
-	position: absolute;
-	width: 40px;
-    height: 40px;
-    padding: 10px;
-    opacity: 0.7;
-	top: 50%;
-	margin-top: -15px;
-}
-
-#left-arrow {
-	left: 60px;
-}
-
-#right-arrow {
-	right: 60px;
-}
-
-.slideshow-arrow:hover {
-	opacity:1;
-	cursor: pointer;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	transition: all 0.3s;
-}*/
-
 #page-content {
 	max-width: 1024px;
 	margin-left:auto;
