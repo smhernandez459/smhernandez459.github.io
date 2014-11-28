@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	color: white;
 	height:70px;
-	z-index: 5;
+	z-index: 100;
 }
 
 .nav {
@@ -229,5 +229,5 @@ footer {
 	bottom: 0px;
 	color:white;
 	height:20px;
-	z-index: 5;
+	z-index: 100;
 }

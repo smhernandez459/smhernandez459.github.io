@@ -15,4 +15,22 @@ $(document).ready(function() {
 			$('#nav-bar').addClass('sticky-nav');
 		}
 	});
+
+	$(".gallery-item").hover(function() {
+		$(this).children().last().css('opacity', '0.4');
+		$(this).children().first().show();
+	}, function(){
+		$(this).children().last().css('opacity', '1');
+		$(this).children().first().hide();
+	});
+
+	$(".plus").click(function() {
+		var count = parseInt($(this).prev().text());
+		count = count + 1;
+		$(this).prev().text(count);
+	});
+
+	$(".gallery-img").click(function() {
+		//overlay
+	});
 });

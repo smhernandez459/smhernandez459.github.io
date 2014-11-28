@@ -17,5 +17,32 @@
 
 .gallery-img {
 	width:90%;
-	padding:10px;
+	padding:10px; 
+	z-index: 5;
+}
+
+.gallery-container {
+	display:none;
+	width:100%;
+	height: 0px;
+	position: relative;
+	top: 80px;
+	z-index: 10;
+}
+
+.plus {
+	position: relative;
+	height:40px;
+	width:40px;
+	top:5px;
+	z-index: 10;
+}
+
+.count {
+	position: relative;
+	font-weight:900;
+	font-size:50;
+	color:black;
+	z-index:10;
+
 }
