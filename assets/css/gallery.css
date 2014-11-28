@@ -1,0 +1,22 @@
+#banner-container {
+	background-image: url(../img/bush.jpg);
+	background-repeat: no-repeat;
+}
+
+#banner-text {
+	margin-left:0px;
+	padding-right:10px;
+	margin-right:10px;
+	float:right;
+}
+
+.image-column {
+	display:inline-block;
+	width:33%;
+	text-align: center;
+}
+
+.gallery-img {
+	width:90%;
+	padding:10px;
+}
