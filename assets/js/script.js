@@ -25,9 +25,12 @@ $(document).ready(function() {
 	});
 
 	$(".plus").click(function() {
-		var count = parseInt($(this).prev().text());
-		count = count + 1;
-		$(this).prev().text(count);
+		if($(this).hasClass('upvote')){
+			$(this).removeClass('upvote');
+			var count = parseInt($(this).prev().text());
+			count = count + 1;
+			$(this).prev().text(count);
+		}
 	});
 
 	$(".gallery-img").click(function() {
