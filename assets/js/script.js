@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+	var carouselIndex = 0;
+
+	/*Parallax and Sticky nav stuff below */
+
 	function parallax() {
 		var scrollPosition = $(window).scrollTop();
 		var xCoordinate = $('#banner-container').css('background-position').split(' ')[0];
@@ -15,6 +20,8 @@ $(document).ready(function() {
 			$('#nav-bar').addClass('sticky-nav');
 		}
 	});
+
+	/* Gallery Functions */
 
 	$(".gallery-item").hover(function() {
 		$(this).children().last().css('opacity', '0.4');
@@ -33,7 +40,49 @@ $(document).ready(function() {
 		}
 	});
 
-	$(".gallery-img").click(function() {
-		//overlay
+	/* Stuff for Adoption carousel below */
+
+	$("#left-arrow").click(function() {
+		if (carouselIndex > 0) {
+			var currentIndex = 0;
+			var current = $("#adopt-items").children().first();
+			while (currentIndex < (carouselIndex -1)) {
+				current = current.next();
+				currentIndex = currentIndex + 1;
+			}
+			current.removeClass("hidden");
+			current = current.next().next();
+			current.addClass("adopt-center-item");
+			current.children().first().addClass("center-img");
+			current = current.next();
+			current.removeClass("adopt-center-item");
+			current.children().first().removeClass("center-img");
+			current = current.next().next();
+			current.addClass("hidden");
+			carouselIndex = carouselIndex - 1;
+		}
 	});
+
+	$("#right-arrow").click(function() {
+		if (carouselIndex < 4) {
+			var currentIndex = 0;
+			var current = $("#adopt-items").children().first();
+			while (currentIndex < carouselIndex) {
+				current = current.next();
+				currentIndex = currentIndex + 1;
+			}
+			current.addClass("hidden");
+			current = current.next().next();
+			current.removeClass("adopt-center-item");
+			current.children().first().removeClass("center-img");
+			current = current.next();
+			current.addClass("adopt-center-item");
+			current.children().first().addClass("center-img");
+			current = current.next().next();
+			current.removeClass("hidden");
+			carouselIndex = carouselIndex + 1;
+		}
+	});
+
+
 });

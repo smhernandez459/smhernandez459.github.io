@@ -54,9 +54,9 @@ body {
 #logo {
 	position: relative;
 	height:60px;
-	width:60px;
+	width:150px;
 	top:2px;
-	left:10px;
+	left:5px;
 }
 
 #banner-container {
@@ -105,7 +105,7 @@ body {
 	max-width: 1024px;
 	margin-left:auto;
 	margin-right:auto;
-	margin-top:505px;
+	margin-top:525px;
 }
 
 .sub-title {
