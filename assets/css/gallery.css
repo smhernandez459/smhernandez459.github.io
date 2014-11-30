@@ -44,3 +44,40 @@
 	z-index:10;
 
 }
+
+#search-bar-container {
+	width:50%;
+	margin-top:15px;
+	margin-bottom:15px;
+	position: relative;
+	left: 55px;
+}
+
+#search-bar {
+	padding:10px;
+	background:white;
+	border:none;
+	width:90%;
+}
+
+#search-button {
+	background: url("../img/search.png") no-repeat -3 -4 transparent;
+	opacity:0.8;
+	padding:6px 15px;
+	border:0.5px solid #6699cc;
+	position:relative;
+	top:2px;
+}
+
+#search-button:hover {
+	opacity:1;
+	cursor: pointer;
+	-webkit-transition: 0.2s;
+}
+
+#search-descr {
+	position:relative;
+	left:55px;
+	font-size:24px;
+	font-weight:100;
+}

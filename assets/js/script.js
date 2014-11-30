@@ -84,5 +84,14 @@ $(document).ready(function() {
 		}
 	});
 
+	/* Search Bar Stuff */
+
+	$("#search-bar-button").click(function() {
+		$("#zip").text($("#search-bar").val());
+	});
+
+	$("#search-button").click(function() {
+		$("#search-descr").text("Showing results for " + $("#search-bar").val());
+	});
 
 });
