@@ -10,12 +10,13 @@
 
 #slideshow-container {
 	width:100%;
-	height: 425px;
+	height: 300px;
 	position: relative;
 	top:0px;
 	left:0px;
 	overflow:hidden;
 	opacity:0.9;
+	padding-top:40px;
 }
 
 .slideshow-img {
@@ -60,6 +61,8 @@
 	background:white;
 	border:none;
 	width:90%;
+	font-size:16px;
+	font-family: "Alegreya Sans";
 }
 
 #search-bar-button {
@@ -97,20 +100,12 @@
 
 .adopt-item {
 	display:inline-block;
-	width:17%;
+	width:19%;
 	text-align: center;
 }
 
-.adopt-center-item {
-	width:28%;
-}
-
 #adopt-container {
-	padding-bottom:60px;
-}
-
-.center-img {
-	opacity:1;
+	padding-bottom:40px;
 }
 
 .hidden {

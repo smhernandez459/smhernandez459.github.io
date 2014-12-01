@@ -7,6 +7,14 @@
 	width:300px;
 }
 
+#gallery-descr {
+	position:relative;
+	font-weight:100;
+	font-size: 24;
+	left: 55px;
+	margin-right:55px;
+}
+
 .image-column {
 	display:inline-block;
 	width:33%;
@@ -30,10 +38,20 @@
 
 .plus {
 	position: relative;
-	height:40px;
-	width:40px;
-	top:6px;
+	height:35px;
+	width:35px;
+	top:4px;
 	z-index: 10;
+}
+
+.upvote {
+	opacity:0.8;
+}
+
+
+.upvote:hover {
+	opacity:1;
+	cursor:pointer;
 }
 
 .count {
@@ -41,8 +59,6 @@
 	font-weight:900;
 	font-size:50;
 	color:black;
-	z-index:10;
-
 }
 
 #search-bar-container {
@@ -58,6 +74,8 @@
 	background:white;
 	border:none;
 	width:90%;
+	font-size:16px;
+	font-family: "Alegreya Sans";
 }
 
 #search-button {
@@ -80,4 +98,27 @@
 	left:55px;
 	font-size:24px;
 	font-weight:100;
+}
+
+#photo-overlay {
+	display:none;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	left: 0px;
+	top: 0px;
+}
+#photo {
+	position:relative;
+	margin-left: auto;
+	margin-right:auto;
+	width:640px;
+	top:50%;
+	margin-top:-320px;
+}
+
+.no-scroll {
+	overflow: hidden;
 }

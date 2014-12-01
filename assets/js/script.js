@@ -34,11 +34,37 @@ $(document).ready(function() {
 	$(".plus").click(function() {
 		if($(this).hasClass('upvote')){
 			$(this).removeClass('upvote');
+			$(this).prev().removeClass('upvote');
 			var count = parseInt($(this).prev().text());
 			count = count + 1;
 			$(this).prev().text(count);
+			$(this).attr("src", "assets/img/heart.png");
 		}
 	});
+
+	$(".count").click(function() {
+		if($(this).hasClass('upvote')){
+			$(this).removeClass('upvote');
+			$(this).next().removeClass('upvote');
+			var count = parseInt($(this).text());
+			count = count + 1;
+			$(this).text(count);
+			$(this).next().attr("src", "assets/img/heart.png");
+		}
+	});
+
+	$(".gallery-img").click(function() {
+		$("#overlay-img").attr("src", $(this).attr("src"));
+		$("#photo-overlay").fadeIn();
+		$('body').addClass('no-scroll');
+	});
+
+	$("#photo-overlay").click(function() {
+		$('body').removeClass('no-scroll');
+		$("#photo-overlay").fadeOut();
+	});
+
+
 
 	/* Stuff for Adoption carousel below */
 
@@ -51,13 +77,7 @@ $(document).ready(function() {
 				currentIndex = currentIndex + 1;
 			}
 			current.removeClass("hidden");
-			current = current.next().next();
-			current.addClass("adopt-center-item");
-			current.children().first().addClass("center-img");
-			current = current.next();
-			current.removeClass("adopt-center-item");
-			current.children().first().removeClass("center-img");
-			current = current.next().next();
+			current = current.next().next().next().next().next();
 			current.addClass("hidden");
 			carouselIndex = carouselIndex - 1;
 		}
@@ -72,13 +92,7 @@ $(document).ready(function() {
 				currentIndex = currentIndex + 1;
 			}
 			current.addClass("hidden");
-			current = current.next().next();
-			current.removeClass("adopt-center-item");
-			current.children().first().removeClass("center-img");
-			current = current.next();
-			current.addClass("adopt-center-item");
-			current.children().first().addClass("center-img");
-			current = current.next().next();
+			current = current.next().next().next().next().next();
 			current.removeClass("hidden");
 			carouselIndex = carouselIndex + 1;
 		}
