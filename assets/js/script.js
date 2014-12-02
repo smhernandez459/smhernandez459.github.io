@@ -105,7 +105,8 @@ $(document).ready(function() {
 	});
 
 	$("#search-button").click(function() {
-		$("#search-descr").text("Showing results for " + $("#search-bar").val());
+		$("#search-descr").show();
+		$("#result").text($("#search-bar").val());
 	});
 
 });

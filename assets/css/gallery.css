@@ -94,10 +94,16 @@
 }
 
 #search-descr {
+	display:none;
 	position:relative;
 	left:55px;
 	font-size:24px;
 	font-weight:100;
+}
+
+#result {
+	color:rgb(216, 55, 98);
+	display:inline-block;
 }
 
 #photo-overlay {
